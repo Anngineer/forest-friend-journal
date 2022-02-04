@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+/* base reset so that I can set the padding and margins*/
+/* Generally, I'll make padding- 10px 15px and margin - 20px */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Setting the base properties for the entire page */
+/* box-sizing so that everything will contain its internal elements*/
+html,
+body {
+  color: #2f3638;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  /*This will make it so when you click on a link, 
+        it will scroll to that spot rather than jump*/
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  color: #2f3638;
+}
+
+#journal-section {
+  background-color: #f5f8f8;
+}
+
+#journal-input {
+  margin: 2rem;
+}
+/*# sourceMappingURL=styles.css.map */

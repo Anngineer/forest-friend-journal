@@ -1,0 +1,41 @@
+// Variables
+
+$background-white: #f5f8f8;
+$background-gray: #60626c;
+
+$text-dark: #2f3638;
+
+/* base reset so that I can set the padding and margins*/
+/* Generally, I'll make padding- 10px 15px and margin - 20px */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Setting the base properties for the entire page */
+/* box-sizing so that everything will contain its internal elements*/
+html,
+body {
+  color: $text-dark;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /*This will make it so when you click on a link, 
+        it will scroll to that spot rather than jump*/
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  color: $text-dark;
+}
+
+#journal-section {
+  background-color: $background-white;
+}
+#journal-input {
+  margin: 2rem;
+}
