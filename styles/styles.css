@@ -13,37 +13,71 @@
 }
 
 /* Setting the base properties for the entire page */
-/* box-sizing so that everything will contain its internal elements*/
 html,
 body {
   color: #2f3638;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* box-sizing so that everything will contain its internal elements*/
   scroll-behavior: smooth;
   /*This will make it so when you click on a link, 
         it will scroll to that spot rather than jump*/
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #2f3638;
 }
 
 #journal-section {
   background-color: #f5f8f8;
   position: relative;
-  min-height: 40rem;
-  padding: 4rem;
+  min-height: 80rem;
+  padding-top: 4rem;
+}
+
+#cloud2 {
+  width: 200px;
+  position: absolute;
+  top: 4rem;
+  right: 10%;
+  display: none;
+}
+
+#bird {
+  width: 200px;
+  position: absolute;
+  top: 20rem;
+  right: 20%;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #cloud2,
+  #bird {
+    display: inherit;
+  }
 }
 
 #journal-wrapper {
   background-image: url("../images/paperS.png");
-  background-size: 94vw 29rem;
+  background-size: 93vw 26rem;
   background-repeat: no-repeat;
-  margin-left: 1rem;
+  margin: 1rem;
+  margin-left: 0.5rem;
   padding: 1.5rem;
-  width: 95vw;
-  height: 30rem;
+  width: 94vw;
+  height: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 380px) {
@@ -51,6 +85,29 @@ body {
     background-size: 307px 432px;
     width: 310px;
     height: 436px;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 500px) {
+  #journal-wrapper {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  #journal-wrapper {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #journal-wrapper {
+    background-size: 390px 522px;
+    width: 392px;
+    height: 525px;
     padding: 2rem;
     padding-bottom: 1rem;
     margin-left: 15%;
@@ -78,6 +135,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  padding-top: 1rem;
 }
 
 button {
@@ -93,8 +151,7 @@ button {
 
 #journal-input {
   padding: 1rem;
-  font-size: 1rem;
-  margin-left: 1rem;
+  font-size: 0.8rem;
   width: 90%;
   height: 80%;
   resize: none;
@@ -107,5 +164,120 @@ button {
   border: 1px solid #60626c;
   -webkit-box-shadow: 0 0 10px #719ece;
           box-shadow: 0 0 10px #719ece;
+}
+
+@media (min-width: 380px) {
+  #journal-input {
+    font-size: 1rem;
+  }
+}
+
+#link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/note.png");
+  background-size: 90vw 14rem;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 14rem;
+  border-radius: 4px;
+  margin-left: 01rem;
+}
+
+#link-container.hidden {
+  display: none;
+}
+
+@media (min-width: 380px) {
+  #link-container {
+    background-size: 290px 14rem;
+    width: 290px;
+    padding: 1rem;
+    padding: 1.5rem;
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 500px) {
+  #link-container {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  #link-container {
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #link-container {
+    background-size: 350px 16rem;
+    width: 355px;
+    height: 16rem;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+#link-description {
+  width: 8rem;
+}
+
+#link-to-share {
+  outline: none !important;
+  border: none;
+  width: 8rem;
+  margin: 0.5rem;
+}
+
+#link-to-share:focus {
+  outline: none !important;
+  border: 1px solid #60626c;
+  -webkit-box-shadow: 0 0 10px #719ece;
+          box-shadow: 0 0 10px #719ece;
+}
+
+#message-hyperlink {
+  text-align: center;
+  text-decoration: none;
+  background-color: #60626c;
+  color: #f0f1f1;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  width: 8rem;
+  display: block;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1000px) {
+  #link-description {
+    font-size: 1.2rem;
+    width: 10rem;
+  }
+  #link-to-share {
+    width: 10rem;
+    margin: 1rem;
+    padding: 0.2rem;
+  }
+  #message-hyperlink {
+    width: 10rem;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

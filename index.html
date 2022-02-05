@@ -38,6 +38,9 @@
     <section id="journal-section">
       <button id="focus-button">Write in Journal</button>
       <div id="journal-wrapper">
+        <img src="./images/bird.svg" alt="" id="bird" />
+        <img src="./images/leftcloud.svg" alt="" id="cloud2" />
+
         <form action="" id="journal-form">
           <h3>Journal</h3>
           <textarea
@@ -54,10 +57,16 @@
       </div>
 
       <div id="link-container">
-        <input type="text" name="" id="link-to-share" />
-        <a href="" target="_blank" id="message-hyperlink"
-          >Check out my journal</a
-        >
+        <!-- <div id="link-container" class="hidden"> -->
+
+        <p id="link-description">Link to message:</p>
+        <input
+          type="text"
+          name=""
+          placeholder="link to share"
+          id="link-to-share"
+        />
+        <a href="" target="_blank" id="message-hyperlink">Go to page</a>
       </div>
     </section>
     <script type="text/javascript" src="./scripts/myscripts.js"></script>
