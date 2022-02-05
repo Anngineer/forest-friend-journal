@@ -4,6 +4,8 @@ $background-white: #f5f8f8;
 $background-gray: #60626c;
 
 $text-dark: #2f3638;
+$text-medium: #3b4244;
+$button-text-white: #f0f1f1;
 
 /* base reset so that I can set the padding and margins*/
 /* Generally, I'll make padding- 10px 15px and margin - 20px */
@@ -35,7 +37,161 @@ body {
 
 #journal-section {
   background-color: $background-white;
+  position: relative;
+  min-height: 40rem;
+  padding: 4rem;
 }
+#journal-wrapper {
+  background-image: url("../images/paperS.png");
+  background-size: 94vw 29rem;
+  background-repeat: no-repeat;
+
+  margin-left: 1rem;
+  padding: 1.5rem;
+
+  width: 95vw;
+  height: 30rem;
+}
+
+@media (min-width: 380px) {
+  #journal-wrapper {
+    background-size: 307px 432px;
+    width: 310px;
+    height: 436px;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 15%;
+  }
+}
+
+#journal-form {
+  height: 85%;
+  width: 90%;
+}
+h3 {
+  color: $text-medium;
+  font-size: 2rem;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+button {
+  background-color: $background-gray;
+  color: $button-text-white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #journal-input {
-  margin: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  width: 90%;
+  height: 80%;
+  resize: none;
+
+  outline: none !important;
+  border: none;
+  &:focus {
+    outline: none !important;
+    border: 1px solid $background-gray;
+    box-shadow: 0 0 10px #719ece;
+  }
 }
+
+//
+//
+//
+// #journal-wrapper {
+//   background-image: url("../images/paperS.png");
+//   background-size: 94vw 29rem;
+//   background-repeat: no-repeat;
+//   margin-left: 0.3rem;
+//   margin-right: auto;
+//   margin-top: 1rem;
+//   height: 30rem;
+//   padding: 1.5rem;
+//   h3 {
+//     color: $text-medium;
+//     font-size: 2rem;
+//   }
+//   textarea {
+//     padding: 1rem;
+//     font-size: 1rem;
+//     resize: none;
+//     width: 90%;
+//     margin-left: 0.5rem;
+//     height: 80%;
+//     outline: none !important;
+//     border: none;
+//     &:focus {
+//       outline: none !important;
+//       border: 1px solid $background-gray;
+//       box-shadow: 0 0 10px #719ece;
+//     }
+//   }
+
+//   button {
+//     background-color: $background-gray;
+//     color: $button-text-white;
+//     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+//     border: none;
+//     border-radius: 5px;
+//     padding: 0.5rem;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+
+// @media (min-width: 380px) {
+//   #journal-wrapper {
+//
+//   }
+// }
+
+// @media (min-width: 500px) {
+//   #journal-wrapper {
+//     // background-size: 25rem 35rem;
+//     margin-left: 20%;
+//     width: 23rem;
+//     // max-width: 504px;
+//     textarea {
+//       width: 230px;
+//     }
+//   }
+// }
+// @media (min-width: 600px) {
+//   #journal-wrapper {
+//     background-size: 400px 500px;
+//     margin-left: 15%;
+//     width: 410px;
+//     height: 510px;
+//     textarea {
+//       width: 330px;
+//       height: 75%;
+//     }
+//   }
+// }
+
+// @media (min-width: 700px) {
+//   #journal-wrapper {
+//     margin-top: 6rem;
+//   }
+// }
+// @media (min-width: 1000px) {
+//   #journal-wrapper {
+//     textarea {
+//       font-size: 1.3rem;
+//       padding: 0.5rem;
+//       margin-bottom: 1rem;
+//     }
+//   }
+// }
