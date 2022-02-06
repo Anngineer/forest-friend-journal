@@ -251,14 +251,19 @@ nav {
 #intro-container {
   background-color: $opaque-white;
   position: absolute;
+
+  padding: 1rem;
+
   right: 1rem;
   bottom: 120px;
   left: 1rem;
+
   border-radius: 4px;
   h2 {
     padding: 1rem;
     padding-bottom: 0.5rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    padding-top: 1.3rem;
   }
   p {
     padding-right: 1rem;
@@ -275,7 +280,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
 }
 
@@ -287,9 +292,6 @@ nav {
       font-size: 1.8rem;
       line-height: 1.8rem;
     }
-    // p {
-    //   font-size: 1.1rem;
-    // }
   }
 }
 @media (min-width: 500px) {
@@ -316,9 +318,7 @@ nav {
     position: absolute;
     width: 20rem;
     top: 126px;
-    // left: 4rem;
     right: 21rem;
-    // padding-left: 0.5rem;
     line-height: 1.9rem;
     font-size: 2rem;
     color: #2a3031;
@@ -327,7 +327,6 @@ nav {
   #intro-container {
     width: 400px;
     background-color: #f2f2f2;
-    // left: 4rem;
     right: 16rem;
     bottom: 4rem;
     padding: 1rem;
@@ -343,14 +342,9 @@ nav {
 
 @media (min-width: 1000px) {
   #outside-h2 {
-    // display: block;
-    // position: absolute;
     width: 40rem;
     top: 11rem;
-    // left: 4rem;
     right: 10rem;
-    // padding-left: 0.5rem;
-    // line-height: 1.9rem;
     font-size: 2.7rem;
     color: #2a3031;
   }
@@ -358,18 +352,10 @@ nav {
   #intro-container {
     font-size: 1.2rem;
     width: 450px;
-    //   background-color: #f2f2f2;
-    //   // left: 4rem;
     right: 22rem;
-    //   bottom: 4rem;
     padding: 1.3rem;
-    //   left: auto;
-    //   #inside-h2 {
-    //     display: none;
-    //   }
     button {
       font-size: 1.2rem;
-      // margin-bottom: 0;
     }
   }
   // }
@@ -694,7 +680,7 @@ h3 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 1rem;
+  // padding-top: 1rem;
 
   button {
     background-color: $background-gray;
