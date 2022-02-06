@@ -35,7 +35,29 @@
     ></script>
   </head>
   <body>
-    <section id="intro-section"></section>
+    <section id="intro-section">
+      <nav>
+        <div id="left-nav">
+          <a href="#">
+            <div>JOURNAL</div>
+          </a>
+          <button class="dropdown-button" id="dropdown-button">
+            <i class="fas fa-bars" alt="drop-down menu"></i>
+          </button>
+        </div>
+        <div id="right-nav">
+          <a href="#journal-section" id="link-write">
+            <div>WRITE</div>
+          </a>
+          <a href="#prompt-section" id="link-prompts">
+            <div>PROMPTS</div>
+          </a>
+          <a href="#about-section" id="link-about">
+            <div>ABOUT</div>
+          </a>
+        </div>
+      </nav>
+    </section>
     <section id="prompt-section">
       <div id="positioner"></div>
       <div id="bear"><button id="bear-button"></button></div>
@@ -69,8 +91,8 @@
         </form>
       </div>
 
-      <div id="link-container">
-        <!-- <div id="link-container" class="hidden"> -->
+      <!-- <div id="link-container"> -->
+      <div id="link-container" class="hidden">
         <p id="link-description">Link to message:</p>
         <input
           type="text"

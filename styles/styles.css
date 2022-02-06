@@ -123,6 +123,10 @@ body {
     height: 405px;
     left: 15%;
   }
+  #bear-button {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 #cloud1 {
@@ -221,7 +225,7 @@ body {
 }
 
 #journal-section {
-  background-color: #60626c;
+  background-color: #f5f8f8;
   position: relative;
   min-height: 60rem;
   padding-top: 4rem;
@@ -238,7 +242,7 @@ body {
 #rabbit {
   width: 200px;
   position: absolute;
-  top: 20rem;
+  top: 23rem;
   right: 20%;
   display: none;
 }

@@ -3,6 +3,7 @@
 $background-white: #f5f8f8;
 $background-gray: #60626c;
 $opaque-white: #ffffffa4;
+$nav-background-color: #dde9e7ca;
 
 $text-dark: #2f3638;
 $text-medium: #3b4244;
@@ -34,6 +35,9 @@ body {
   font-size: 1rem;
   color: $text-dark;
 }
+
+// --------------------------------------------
+// NAVBAR
 
 // INTRO-SECTION
 #intro-section {
@@ -131,6 +135,10 @@ body {
     width: 400px;
     height: 405px;
     left: 15%;
+  }
+  #bear-button {
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -239,7 +247,8 @@ body {
 // ------------------------------------------------------------
 // Journal Section
 #journal-section {
-  background-color: $background-gray;
+  background-color: $background-white;
+
   position: relative;
   min-height: 60rem;
   padding-top: 4rem;
@@ -255,7 +264,7 @@ body {
 #rabbit {
   width: 200px;
   position: absolute;
-  top: 20rem;
+  top: 23rem;
   right: 20%;
   display: none;
 }
