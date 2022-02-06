@@ -1114,8 +1114,14 @@ footer {
   align-items: flex-end;
   justify-content: flex-end;
   min-height: 10rem;
-  padding: 3rem;
+  padding: 1rem;
   p {
     text-align: right;
+  }
+}
+
+@media (min-width: 700px) {
+  footer {
+    padding: 3rem;
   }
 }
