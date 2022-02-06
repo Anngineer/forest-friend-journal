@@ -29,10 +29,201 @@ body {
   color: #2f3638;
 }
 
-#journal-section {
+#intro-section {
+  background-color: #60626c;
+  position: relative;
+  min-height: 30rem;
+  padding-top: 4rem;
+}
+
+#prompt-section {
   background-color: #f5f8f8;
   position: relative;
-  min-height: 80rem;
+  min-height: 28rem;
+}
+
+@media (min-width: 300px) {
+  #prompt-section {
+    min-height: 25rem;
+  }
+}
+
+@media (min-width: 400px) {
+  #prompt-section {
+    min-height: 20rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #prompt-section {
+    min-height: 30rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #prompt-section {
+    min-height: 33rem;
+  }
+}
+
+#positioner {
+  height: 1rem;
+  display: block;
+}
+
+#bear {
+  background-image: url("../images/bear.png");
+  background-size: 200px 205px;
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  width: 200px;
+  height: 205px;
+}
+
+#bear-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 190px;
+  height: 170px;
+}
+
+@media (min-width: 380px) {
+  #bear {
+    left: 3rem;
+  }
+}
+
+@media (min-width: 500px) {
+  #bear {
+    left: 4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #bear {
+    top: 2rem;
+    background-size: 300px 305px;
+    width: 300px;
+    height: 305px;
+    left: 10%;
+  }
+  #bear-button {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #bear {
+    top: 3rem;
+    background-size: 400px 405px;
+    width: 400px;
+    height: 405px;
+    left: 15%;
+  }
+}
+
+#cloud1 {
+  width: 200px;
+  margin-right: 4rem;
+  margin-left: auto;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  #cloud1 {
+    display: block;
+    margin-right: 8rem;
+    margin-top: 1rem;
+  }
+}
+
+#mushrooms {
+  width: 75px;
+  margin-left: auto;
+  position: absolute;
+  top: 5rem;
+  right: 4rem;
+}
+
+@media (min-width: 380px) {
+  #mushrooms {
+    top: 9rem;
+    left: 7rem;
+    right: auto;
+  }
+}
+
+@media (min-width: 500px) {
+  #mushrooms {
+    left: 9rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #mushrooms {
+    left: 25%;
+    top: 17rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #mushrooms {
+    width: 100px;
+    left: 35%;
+    top: 25rem;
+  }
+}
+
+#suggestion-box {
+  border: 12px solid #dee7e4;
+  border-radius: 4px;
+  background-color: #faf8fd;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-top: 10rem;
+  padding: 0.8rem;
+  position: static;
+  display: block;
+}
+
+@media (min-width: 380px) {
+  #suggestion-box {
+    width: 44%;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 500px) {
+  #suggestion-box {
+    margin-right: 9%;
+    width: 46%;
+  }
+}
+
+@media (min-width: 700px) {
+  #suggestion-box {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #suggestion-box {
+    margin-top: 3.5rem;
+    margin-left: 45%;
+    width: 350px;
+    font-size: 1.2rem;
+  }
+}
+
+#journal-section {
+  background-color: #60626c;
+  position: relative;
+  min-height: 60rem;
   padding-top: 4rem;
 }
 
@@ -44,7 +235,7 @@ body {
   display: none;
 }
 
-#bird {
+#rabbit {
   width: 200px;
   position: absolute;
   top: 20rem;
@@ -54,7 +245,7 @@ body {
 
 @media (min-width: 800px) {
   #cloud2,
-  #bird {
+  #rabbit {
     display: inherit;
   }
 }
@@ -186,7 +377,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../images/note.png");
+  background-image: url("../images/notens.png");
   background-size: 90vw 14rem;
   background-repeat: no-repeat;
   width: 90vw;
