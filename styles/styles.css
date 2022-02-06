@@ -632,8 +632,20 @@ nav a {
 #journal-section {
   background-color: #f5f8f8;
   position: relative;
-  min-height: 60rem;
+  height: 50rem;
   padding-top: 4rem;
+}
+
+@media (min-width: 500px) {
+  #journal-section {
+    height: 46rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #journal-section {
+    height: 54rem;
+  }
 }
 
 #cloud2 {
@@ -877,6 +889,86 @@ h3 {
   #message-hyperlink {
     width: 10rem;
     font-size: 1rem;
+  }
+}
+
+#dialogue-section {
+  background-color: #f5f8f8;
+}
+
+#deer-mouse-container {
+  width: 100vw;
+  padding: 1rem;
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+  #deer-mouse-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+#mouse {
+  position: static;
+  width: 95%;
+  max-width: 390px;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  #mouse {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #mouse {
+    margin-left: 4rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+#deer2 {
+  width: 85%;
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 390px;
+}
+
+@media (min-width: 700px) {
+  #deer2 {
+    width: 400px;
+    margin-right: 5rem;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+}
+
+@media (min-width: 1000px) {
+  #deer2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
