@@ -175,6 +175,7 @@ nav a {
 
 @media (min-width: 800px) {
   nav {
+    padding: 1.5rem 2rem;
     font-size: 1.1rem;
   }
   nav #right-nav {
@@ -194,8 +195,8 @@ nav a {
     background-color: #2f3638;
     position: -webkit-sticky;
     position: sticky;
-    top: 2.6rem;
-    left: 7.3rem;
+    top: 2.4rem;
+    left: 8.3rem;
     z-index: 600;
   }
 }
@@ -970,5 +971,194 @@ h3 {
         -ms-grid-row-align: center;
         align-self: center;
   }
+}
+
+#about-section {
+  background-color: #b4bfc5;
+  position: relative;
+  min-height: 50rem;
+  padding: 1rem;
+}
+
+#forest {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/forestshort.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+@media (min-width: 500px) {
+  #forest {
+    background-image: url("../images/forestshortshort.svg");
+    background-size: 85vw;
+  }
+}
+
+@media (min-width: 500px) {
+  #forest {
+    background-size: 65vw;
+  }
+}
+
+@media (min-width: 700px) {
+  #forest {
+    background-size: 500px;
+    width: 500px;
+  }
+}
+
+#about-container {
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: #ffffffa4;
+  background-color: #f3f7f6cc;
+  border-radius: 4px;
+}
+
+#about-container h2 {
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.3rem;
+}
+
+#about-container p {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#girl {
+  width: 50%;
+  margin-bottom: 1rem;
+  max-width: 230px;
+}
+
+#socials-container {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+}
+
+#socials-container button {
+  display: inline-block;
+  background-color: #b4bfc5;
+  border: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+@media (min-width: 400px) {
+  #socials-container {
+    bottom: 4rem;
+    right: 4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #socials-container {
+    margin: auto;
+    width: 100%;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 380px) {
+  #about-container {
+    margin-left: 1.5rem;
+    padding: 1.5rem;
+  }
+  #about-container h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  #about-container {
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 700px) {
+  #about-container {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 6rem;
+  }
+  #about-container #girl {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  #about-container {
+    width: 40%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: 10rem;
+    margin-top: 9rem;
+    font-size: 1.2rem;
+  }
+  #about-container p {
+    padding: 1.5rem;
+  }
+}
+
+#outside-girl {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  #outside-girl {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    top: 19rem;
+    left: 4rem;
+  }
+}
+
+footer {
+  position: relative;
+  top: -5px;
+  color: white;
+  background-color: #b4bfc5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 10rem;
+  padding: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */
