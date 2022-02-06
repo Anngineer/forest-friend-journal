@@ -330,6 +330,8 @@ nav a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
+  cursor: pointer;
+  z-index: 500;
 }
 
 @media (min-width: 400px) {
