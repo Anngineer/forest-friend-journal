@@ -40,6 +40,44 @@ function focusJournal() {
   textArea.focus();
   textArea.select();
 }
+
+// --------------------------------------------
+// JAVASCRIPT FOR THE Bear Prompt
+
+let bearPrompts = [
+  "Need any help coming up with what to write about in the journal letter? Strum the bear's guitar with a click and he'll ask you a question here for you to answer. ",
+  "If you were to dream about something tonight, what would you like it to be?",
+  "What were you able to start or complete today? Little things add up!",
+  "Did you drink water and take any medications that you’re supposed to?",
+  "Who is someone you admire?",
+  "If you could jump into any film, what would it be and why?",
+];
+
+const bearButton = document.querySelector("#bear-button");
+const suggestionBox = document.querySelector("#suggestion-box");
+promptNumber = 0;
+bearButton.addEventListener("click", () => {
+  changePrompt();
+  console.log("OOooooh you poked the bear!");
+});
+
+function changePrompt() {
+  if (promptNumber < 5) {
+    promptNumber += 1;
+    console.log(promptNumber);
+    changePromptInnerText();
+  } else {
+    promptNumber = 1;
+    console.log(promptNumber);
+    console.log("Nah, no more times!");
+    changePromptInnerText();
+  }
+}
+function changePromptInnerText() {
+  console.log(bearPrompts[promptNumber]);
+  suggestionBox.innerText = bearPrompts[promptNumber];
+}
+
 // --------------------------------------------
 // JAVASCRIPT FOR THE MESSAGE COMPONENT
 // This was inspired by the secret message decoder app tutorial from Colt Steel and Stephen Grider's Modern Javascript Bootcamp Course.
