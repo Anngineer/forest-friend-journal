@@ -1,7 +1,38 @@
+// Nav javascript
+// JS for opening and shutting the drop down menu
+const dropdownButton = document.getElementById("dropdown-button");
+const rightNav = document.getElementById("right-nav");
+dropdownButton.addEventListener("click", () => {
+  rightNav.classList.toggle("dropdown");
+});
+
+// JS for closing drop down menu when a link is clicked
+const linkWrite = document.getElementById("link-write");
+const linkPrompts = document.getElementById("link-prompts");
+const linkAbout = document.getElementById("link-about");
+
+linkWrite.addEventListener("click", () => {
+  closeMenu();
+});
+linkPrompts.addEventListener("click", () => {
+  closeMenu();
+});
+linkAbout.addEventListener("click", () => {
+  closeMenu();
+});
+function closeMenu() {
+  if (document.getElementById("right-nav").classList.contains("dropdown")) {
+    document.getElementById("right-nav").classList.remove("dropdown");
+  }
+}
+
 // Button to jump to focus inside textArea
 const moveFocusButton = document.querySelector("#focus-button");
 const textArea = document.querySelector("textArea");
 moveFocusButton.addEventListener("click", () => {
+  focusJournal();
+});
+linkWrite.addEventListener("click", () => {
   focusJournal();
 });
 
