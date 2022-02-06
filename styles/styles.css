@@ -164,9 +164,36 @@ nav a {
   }
 }
 
+@media (min-width: 700px) {
+  #left-nav div {
+    background-color: #f5f8f8d0;
+  }
+  #right-nav div {
+    background-color: #f5f8f8d0;
+  }
+}
+
 @media (min-width: 800px) {
   nav #right-nav {
     width: 38%;
+  }
+}
+
+#underline {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #underline {
+    display: block;
+    width: 12rem;
+    height: 2px;
+    background-color: #2f3638;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2.6rem;
+    left: 10rem;
+    z-index: 600;
   }
 }
 
@@ -429,6 +456,7 @@ nav a {
 @media (min-width: 700px) {
   #prompt-section {
     min-height: 30rem;
+    background-color: #f5f8f8;
   }
 }
 
