@@ -14,6 +14,8 @@ $text-dark: #2f3638;
 $text-medium: #3b4244;
 $button-text-white: #f0f1f1;
 
+// Mixins
+
 /* base reset so that I can set the padding and margins*/
 /* Generally, I'll make padding- 10px 15px and margin - 20px */
 * {
@@ -286,22 +288,32 @@ nav {
   background-color: $opaque-white;
   position: absolute;
 
-  padding: 0.5rem;
-
   right: 1rem;
   bottom: 120px;
   left: 1rem;
 
   border-radius: 4px;
+
+  min-height: 22rem;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   h2 {
     padding: 1rem;
     padding-bottom: 0.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     padding-top: 1.3rem;
+    position: absolute;
+    top: 1.5rem;
   }
   p {
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-right: 1rem;
+    display: none;
   }
   .button-container {
     display: flex;
@@ -314,7 +326,7 @@ nav {
   #focus-button {
     background-color: $background-gray;
     color: $button-text-white;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
     border: none;
     border-radius: 5px;
     padding: 0.5rem;
@@ -324,11 +336,67 @@ nav {
     cursor: pointer;
     // margin-bottom: 1rem;
     z-index: 400;
+    font-size: medium;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:focus {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:active {
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    &:visited {
+      box-shadow: none;
+    }
+  }
+  #more-info-button {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    // background-color: #b4bfc5;
+    background-color: #c6d1cf;
+    border: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:focus {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:active {
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    &:visited {
+      box-shadow: none;
+    }
   }
 }
 @media (min-width: 290px) {
   #intro-container {
     padding: 1rem;
+    #focus-button {
+      font-size: large;
+      padding: 0.8rem;
+    }
   }
 }
 
@@ -336,17 +404,18 @@ nav {
   #intro-container {
     margin-left: 1.5rem;
     padding: 1.5rem;
+    min-height: 23rem;
     h2 {
       font-size: 1.8rem;
-      line-height: 1.8rem;
+      line-height: 2.2rem;
     }
   }
 }
 @media (min-width: 500px) {
   #intro-container {
     left: 2rem;
-    margin-left: auto;
-    right: auto;
+    // margin-left: auto;
+    // right: auto;
     padding: 1.5rem;
     margin-right: 2rem;
   }
@@ -379,6 +448,8 @@ nav {
     bottom: 4rem;
     padding: 1rem;
     left: auto;
+    min-height: 15rem;
+
     #inside-h2 {
       display: none;
     }
@@ -398,6 +469,7 @@ nav {
   }
 
   #intro-container {
+    min-height: 17rem;
     font-size: 1.2rem;
     width: 450px;
     right: 22rem;
@@ -407,6 +479,17 @@ nav {
     }
   }
   // }
+}
+
+#intro-container.show {
+  padding-bottom: 3rem;
+  h2 {
+    position: static;
+  }
+  p {
+    display: inline-block;
+    // padding-top: 3rem;
+  }
 }
 
 // FOX / INTRO SECTION ---------------
@@ -748,13 +831,28 @@ h3 {
     button {
       background-color: $background-gray;
       color: $button-text-white;
-      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
       border: none;
       border-radius: 5px;
       padding: 0.5rem;
       margin-left: auto;
       margin-right: auto;
       cursor: pointer;
+      &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      &:focus {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      &:active {
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      }
+      &:visited {
+        box-shadow: none;
+      }
     }
   }
 }
@@ -848,7 +946,7 @@ h3 {
   text-decoration: none;
   background-color: $background-gray;
   color: $button-text-white;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.05);
   border: none;
   width: 8rem;
   display: block;
@@ -857,6 +955,22 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   font-size: 0.8rem;
+  &:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  &:focus {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  &:active {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  &:visited {
+    box-shadow: none;
+  }
 }
 @media (min-width: 1000px) {
   #link-description {
@@ -1029,6 +1143,22 @@ h3 {
     margin-right: 0.2rem;
     margin-left: 0.2rem;
     text-align: center;
+    &:hover {
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:focus {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    &:active {
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    &:visited {
+      box-shadow: none;
+    }
   }
 }
 

@@ -41,6 +41,15 @@ function focusJournal() {
   textArea.select();
 }
 
+// JS for showing and hiding the app info
+const introContainer = document.getElementById("intro-container");
+const moreInfoButton = document.getElementById("more-info-button");
+
+// moreInfoButton.addEventListener("click", () => {
+moreInfoButton.addEventListener("click", () => {
+  introContainer.classList.toggle("show");
+});
+
 // --------------------------------------------
 // JAVASCRIPT FOR THE Bear Prompt
 
@@ -57,6 +66,11 @@ const bearButton = document.querySelector("#bear-button");
 const suggestionBox = document.querySelector("#suggestion-box");
 promptNumber = 0;
 bearButton.addEventListener("click", () => {
+  changePrompt();
+  console.log("OOooooh you poked the bear!");
+});
+
+suggestionBox.addEventListener("click", () => {
   changePrompt();
   console.log("OOooooh you poked the bear!");
 });
