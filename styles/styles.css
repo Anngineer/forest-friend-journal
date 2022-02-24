@@ -38,7 +38,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,7 +612,7 @@ nav a {
   border-radius: 4px;
   background-color: #faf8fd;
   margin-left: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-top: 10rem;
   padding: 0.8rem;
   position: static;
