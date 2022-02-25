@@ -366,7 +366,7 @@ nav {
   #more-info-button {
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    left: 1.5rem;
 
     // background-color: #b4bfc5;
     background-color: #c6d1cf;
@@ -412,6 +412,10 @@ nav {
     h2 {
       font-size: 1.8rem;
       line-height: 2.2rem;
+    }
+    #more-info-button {
+      left: 2.5rem;
+      bottom: 2rem;
     }
   }
 }
@@ -460,6 +464,10 @@ nav {
     button {
       margin-bottom: 0;
     }
+    #more-info-button {
+      left: 1.5rem;
+      bottom: 1.5rem;
+    }
   }
 }
 
@@ -480,6 +488,10 @@ nav {
     padding: 1.3rem;
     button {
       font-size: 1.2rem;
+    }
+    #more-info-button {
+      left: 2rem;
+      bottom: 2rem;
     }
   }
   // }
