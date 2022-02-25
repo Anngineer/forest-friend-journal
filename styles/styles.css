@@ -43,6 +43,13 @@ body {
   display: none;
 }
 
+@media (min-width: 800px) {
+  #music-note {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 nav {
   font-family: Merriweather, serif;
   margin: 0;
