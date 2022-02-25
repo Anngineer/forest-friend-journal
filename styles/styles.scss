@@ -6,7 +6,7 @@ $background-light-gray: #9698a2;
 $background-blue: #dde9e7;
 $background-bluish-gray: #677379;
 
-$opaque-white-share: #ffffffa4;
+$opaque-white-text: #ffffffa4;
 $opaque-white: #ffffff77;
 
 $nav-background-color: #dde9e7ca;
@@ -398,7 +398,7 @@ nav {
   }
 }
 #intro-container.show {
-  background-color: $opaque-white-share;
+  background-color: $opaque-white-text;
 }
 @media (min-width: 290px) {
   #intro-container {
@@ -1135,7 +1135,7 @@ h3 {
   top: 4rem;
   left: 1rem;
   right: 1rem;
-  background-color: $opaque-white;
+  background-color: $opaque-white-text;
   background-color: #f3f7f6cc;
   border-radius: 4px;
   h2 {
