@@ -183,6 +183,12 @@ nav a {
   }
 }
 
+@media (min-width: 1000px) {
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
 #underline {
   display: none;
 }
@@ -190,13 +196,13 @@ nav a {
 @media (min-width: 1000px) {
   #underline {
     display: block;
-    width: 12rem;
+    width: 20rem;
     height: 2px;
     background-color: #2f3638;
     position: -webkit-sticky;
     position: sticky;
     top: 2.4rem;
-    left: 8.3rem;
+    left: 9.3rem;
     z-index: 600;
   }
 }

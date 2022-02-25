@@ -170,6 +170,12 @@ nav {
     }
   }
 }
+@media (min-width: 1000px) {
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
 // Underline -------------
 #underline {
   display: none;
@@ -178,13 +184,13 @@ nav {
 @media (min-width: 1000px) {
   #underline {
     display: block;
-    width: 12rem;
+    width: 20rem;
     height: 2px;
     background-color: $text-dark;
     position: sticky;
     // display:
     top: 2.4rem;
-    left: 8.3rem;
+    left: 9.3rem;
     z-index: 600;
   }
 }
