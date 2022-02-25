@@ -357,8 +357,7 @@ nav {
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     &:active {
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     }
     &:visited {
       box-shadow: none;
@@ -388,8 +387,7 @@ nav {
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     &:active {
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     }
     &:visited {
       box-shadow: none;
@@ -853,8 +851,7 @@ h3 {
           rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
       }
       &:active {
-        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
       }
       &:visited {
         box-shadow: none;
@@ -971,8 +968,7 @@ h3 {
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   &:active {
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   }
   &:visited {
     box-shadow: none;
@@ -1121,6 +1117,9 @@ h3 {
     padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    a {
+      color: #2f3638;
+    }
   }
 }
 #girl {
@@ -1159,12 +1158,14 @@ h3 {
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     &:active {
-      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-        rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     }
     &:visited {
       box-shadow: none;
     }
+  }
+  #instagram {
+    align-items: center;
   }
 }
 

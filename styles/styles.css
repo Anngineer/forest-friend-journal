@@ -385,8 +385,8 @@ nav a {
 }
 
 #intro-container #focus-button:active {
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #intro-container #focus-button:visited {
@@ -420,8 +420,8 @@ nav a {
 }
 
 #intro-container #more-info-button:active {
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #intro-container #more-info-button:visited {
@@ -892,8 +892,8 @@ h3 {
 }
 
 #journal-section .button-container button:active {
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #journal-section .button-container button:visited {
@@ -1029,8 +1029,8 @@ h3 {
 }
 
 #message-hyperlink:active {
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #message-hyperlink:visited {
@@ -1202,6 +1202,10 @@ h3 {
   padding-bottom: 1rem;
 }
 
+#about-container p a {
+  color: #2f3638;
+}
+
 #girl {
   width: 50%;
   margin-bottom: 1rem;
@@ -1241,13 +1245,19 @@ h3 {
 }
 
 #socials-container button:active {
-  -webkit-box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 #socials-container button:visited {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+#socials-container #instagram {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 400px) {
