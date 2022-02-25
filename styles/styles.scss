@@ -45,6 +45,27 @@ body {
   background-color: $background-white;
 }
 
+//
+//Sound mushroom
+#music-note {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: inherit;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+#music-note.hidden {
+  display: none;
+}
+// Add a media call here for when I fix vscode
+// @media (min-width:800px){
+// #music-note {
+// width: 90px;
+// height: 90px;
+// }
+
 // --------------------------------------------
 // NAVBAR
 
@@ -512,7 +533,7 @@ nav {
 }
 
 #intro-container.show {
-  padding-bottom: 3.5rem;
+  padding-bottom: 3rem;
 
   h2 {
     position: static;
