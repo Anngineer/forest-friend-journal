@@ -6,7 +6,9 @@ $background-light-gray: #9698a2;
 $background-blue: #dde9e7;
 $background-bluish-gray: #677379;
 
-$opaque-white: #ffffffa4;
+$opaque-white-share: #ffffffa4;
+$opaque-white: #ffffff77;
+
 $nav-background-color: #dde9e7ca;
 $nav-light-background-color: #f5f8f8d0;
 
@@ -292,6 +294,7 @@ nav {
 }
 #intro-container {
   background-color: $opaque-white;
+
   position: absolute;
 
   right: 1rem;
@@ -338,7 +341,7 @@ nav {
     padding: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
     cursor: pointer;
     // margin-bottom: 1rem;
     z-index: 400;
@@ -394,12 +397,18 @@ nav {
     }
   }
 }
+#intro-container.show {
+  background-color: $opaque-white-share;
+}
 @media (min-width: 290px) {
   #intro-container {
     padding: 1rem;
     #focus-button {
       font-size: large;
       padding: 0.8rem;
+    }
+    #more-info-button {
+      bottom: 1.5rem;
     }
   }
 }
@@ -461,13 +470,18 @@ nav {
     #inside-h2 {
       display: none;
     }
-    button {
+    #focus-button {
+      margin-top: 1rem;
       margin-bottom: 0;
     }
+
     #more-info-button {
-      left: 1.5rem;
-      bottom: 1.5rem;
+      left: 1.8rem;
+      bottom: 1.8rem;
     }
+  }
+  #intro-container.show {
+    background-color: #f2f2f2;
   }
 }
 
@@ -498,13 +512,17 @@ nav {
 }
 
 #intro-container.show {
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
+
   h2 {
     position: static;
   }
   p {
     display: inline-block;
     // padding-top: 3rem;
+  }
+  #focus-button {
+    margin-top: 1rem;
   }
 }
 
