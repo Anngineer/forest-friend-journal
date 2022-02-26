@@ -125,7 +125,7 @@ function floatImage(left, top) {
   clearInterval(idAnimate);
   let tick = 0;
   console.log("cleared idAnimate");
-  idAnimate = setInterval(move, 1);
+  idAnimate = setInterval(move, 50);
   function move() {
     if (tick === 45) {
       clearInterval(idAnimate);
