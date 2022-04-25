@@ -8,4 +8,4 @@ This project was built in VSCode using HTML, SCSS/CSS, and vanilla JavaScript.Wi
 
 ## Contact
 
-Please feel free to view more projects in the [portfolio](https://mathmythica.com/) or contact Anngineer@gmail.com in regards to my work or future projects.
+Please feel free to view more projects in the [portfolio](https://anngineer.com/) or contact Anngineer@gmail.com in regards to my work or future projects.
