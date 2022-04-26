@@ -1415,6 +1415,10 @@ footer p {
   text-align: right;
 }
 
+footer a {
+  color: white;
+}
+
 @media (min-width: 700px) {
   footer {
     padding: 3rem;

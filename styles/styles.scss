@@ -61,10 +61,10 @@ body {
   display: none;
 }
 
-@media (min-width:800px){
+@media (min-width: 800px) {
   #music-note {
-  width: 90px;
-  height: 90px;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -1307,6 +1307,9 @@ footer {
   padding: 1rem;
   p {
     text-align: right;
+  }
+  a {
+    color: white;
   }
 }
 
