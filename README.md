@@ -1,5 +1,7 @@
 # forest-friend-journal
 
+Live url: [Forest Friend Journal](https://anngineer.github.io/forest-friend-journal/).
+
 This repository is a journal page that creates an encoded message.
 
 ## Details
